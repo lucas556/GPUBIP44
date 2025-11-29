@@ -1,6 +1,6 @@
 ## 
 ### buding 
-'''
+```
 EXT=$(python3 -c "import sysconfig; print(sysconfig.get_config_var('EXT_SUFFIX'))")
 
 nvcc -O3 -std=c++17 \
@@ -13,4 +13,4 @@ nvcc -O3 -std=c++17 \
   -L/usr/local/cuda/lib64 -lcudart -lgomp
 
   python3 build_master_middleware.py mnemo.txt master_i_with_pass.bin  --batch-size 500000   --threads-per-block 128
-'''
+```
